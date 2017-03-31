@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+<body>
+	<div class="container">
+	<header>
+		<img src="img/Dragon_Ball_Logo.png" alt="">
+	</header>
+		<div class="row">
+			<div class="slider">
+				<div><img src="img/Goku.png" class="char-img"></div>
+				<div><img src="img/Krillin.png" class="char-img"></div>
+				<div><img src="img/Roshi.png" class="char-img"></div>
+				<div><img src="img/Crono.png" class="char-img"></div>
+			</div>
+		</div>
+		<form id="playerForm" action="resultado.php" method="post">
+			<div class="row">
+				<div id="p1" class="col-md-6">
+					<h2>PLAYER 1</h2>
+					<div class="form-group">
+						<label>Direccion:</label>
+						<input type="text" class="form-control" name="addrp1">
+					</div>
+					<div class="form-group">
+						<label>Edad:</label>
+						<input type="number" class="form-control" name="agep1">
+					</div>
+					<div class="form-group">
+						<label>Personaje:</label>
+						<select id="chr1" class="form-control" name="charp1">
+							<option value="Goku">Goku</option>
+							<option value="Krillin">Krillin</option>
+							<option value="Roshi">Fullet Tortuga</option>
+							<option value="Crono">Crono</option>
+						</select>
+					</div>
+				</div>
+				<div id="p2" class="col-md-6">
+					<h2>PLAYER 2</h2>
+					<div class="form-group">
+						<label>Direccion:</label>
+						<input type="text" class="form-control" name="addrp2">
+					</div>
+					<div class="form-group">
+						<label>Edad:</label>
+						<input type="number" class="form-control" name="agep2">
+					</div>
+					<div class="form-group">
+						<label>Personaje:</label>
+						<select id="chr2" class="form-control" name="charp2">
+							<option value="Goku">Goku</option>
+							<option value="Krillin">Krilin</option>
+							<option value="Roshi">Fullet Tortuga</option>
+							<option value="Crono">Crono</option>
+						</select>
+					</div>
+				</div>	
+			</div>
+			<div class="row">
+                <div id="selected-char-p1" class="col-md-5"><img id="img-p1" src="img/Goku.png"></img></div>
+                <div class="col-md-2"><img  id="vs" class="img-responsive" src="img/vs.png"></img></div>
+                <div id="selected-char-p2" class="col-md-5"><img id="img-p2" src="img/Goku.png"></img></div>
+			</div>
+			<div id="fight" class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                	<input type="submit" class="btn btn-primary btn-block" value="FIGHT!">
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+		</form>
+	</div>
+</body>
+</html>

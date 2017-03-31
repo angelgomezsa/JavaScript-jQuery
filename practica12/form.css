@@ -1,0 +1,68 @@
+html,body {
+	background-color: #181f27;
+	overflow-x: hidden;
+}
+	
+header {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+header>img {
+	max-height: 250px;
+	max-width: 100%;
+} 
+
+.slider {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.char-img {
+	height: 250px;
+	display: inline-block !important;
+}
+
+h2 {
+	text-align: center !important;
+	background-color: lightgray;
+	color: black;
+	padding: 5px;
+	font-size: 26px;
+	border:2px solid #000;
+}
+
+label {
+	color: #fff;
+}
+
+#images, #fight {
+	margin: 20px;
+}
+
+#img-p1 {
+	position: relative;
+	height: 250px;
+	display: inline-block;
+}
+
+#vs {
+	margin: 25px auto;
+	height: 200px;
+}
+
+#img-p2 {
+	position: relative;
+	height: 250px;
+	display: inline-block;
+}
+
+#selected-char-p1,#selected-char-p2 {
+	position: relative;
+	text-align: center;
+}
+
+label.error {
+	color: red;
+	margin-top: 5px;
+}

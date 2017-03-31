@@ -1,0 +1,12 @@
+#map {
+	width: 100%;
+	height: 600px;
+}
+
+#map img {
+	height: 200px;
+}
+
+b {
+	font-weight:bold;
+}
