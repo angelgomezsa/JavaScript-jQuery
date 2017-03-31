@@ -40,10 +40,14 @@ label {
 	margin: 20px;
 }
 
-#img-p1 {
-	position: relative;
+#img-p1, #img-p2 {
+	position: absolute;
+	margin: auto;
 	height: 250px;
-	display: inline-block;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 #vs {
@@ -51,15 +55,8 @@ label {
 	height: 200px;
 }
 
-#img-p2 {
-	position: relative;
-	height: 250px;
-	display: inline-block;
-}
-
 #selected-char-p1,#selected-char-p2 {
-	position: relative;
-	text-align: center;
+	height: 250px;
 }
 
 label.error {
